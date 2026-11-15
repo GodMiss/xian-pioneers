@@ -1,0 +1,27 @@
+{
+  "_说明": "复制为 mcp_servers.json 即可被自动加载；格式与 Claude Desktop 一致（mcpServers 包裹）。",
+  "mcpServers": {
+    "demo": {
+      "command": "python3",
+      "args": ["demo_mcp_server.py"],
+      "_说明": "本仓库自带的示例 server，Windows 上把 python3 改成 python"
+    }
+  },
+  "_更多示例": [
+    {
+      "filesystem": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"],
+        "_说明": "本地文件读写；需要 Node.js，路径换成你自己的目录"
+      }
+    },
+    {
+      "remote_example": {
+        "url": "https://your-mcp-server.example.com/mcp",
+        "transport": "http",
+        "headers": {"Authorization": "Bearer ${MCP_REMOTE_TOKEN}"},
+        "_说明": "远程 server：transport 可选 http（streamable-http）或 sse；${VAR} 会从环境变量展开"
+      }
+    }
+  ]
+}

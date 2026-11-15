@@ -1,0 +1,3 @@
+{"id":"ex1","question":"下列哪个行星离太阳最近？","type":"choice","options":["水星","金星","地球","火星"],"answer":"A"}
+{"id":"ex2","question":"5 × 6 等于多少？","type":"short","answer":"30"}
+{"id":"ex3","question":"《红楼梦》的作者是谁？","type":"short","answer":"曹雪芹"}
